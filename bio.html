@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="resume.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+
+
+  <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="data:image/jpeg;base64,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"  alt="home-icon" width="30" height="24">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Bio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resume.html">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plans.html">Plans</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactMe.html">Contact-Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+  <div id="intro">
+    <h1>Ridwan Abdulalim Hamid</h1>
+    <h5>a Web Developer</h5>
+    <img src="C:\Users\bluen\OneDrive\Documents\web_developer_course\2023 Web Development\Ridwan.jpeg" class="bio-photos" alt="profile image" srcset="">
+    <p>On August 2014 I began my education at Darul Uloom New York and did my Nazira and Hifz there. I then transferred to Al Hussanain Seminary, located in Indianapolis for Alim Course and did my first 2 & 1/2 years there. I then transferred to the Insitute of Islamic Education, located in Elgin, IL for my final 3 and 1/2 years.</p>
+    <p>Alongside my Alim Course I have studied programming and have mastered the languages; HTML, CSS, JavaScript, and Python and learned how to build websites with stylic front end designs and functioning back end codeing</p>
+  </div>
+
+  <div id="skills">
+    <h1>Skills</h1>
+    <img src="data:image/png;base64,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" class="bio-photos" alt="skills-icon" srcset="">
+    <ul id="skill-list">
+      <li>Islamic Studies</li>
+      <li>Programming</li>
+    </ul>
+  </div>
+
+  <div id="Education">
+    <h1>Education</h1>
+    <img src="data:image/png;base64,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" class="bio-photos" alt="" sizes="" srcset="">
+    <a href="https://duny.us/"><p>Darul Uloom New York</p></a>
+    <a href="https://alhussnain.org/"><p>Al Hussanain Seminary</p></a>
+    <a href="https://www.islamicedu.org/"><p>Institute of Islamic Education</p></a>
+  </div>
+
+  <div id="Goals">
+    <h1>Goals</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-Yfg1A62TPtqFGfnxc4pWH-DeRh98GxfZxA&usqp=CAU" class="bio-photos" alt="" srcset="">
+    <ul>
+      <li>Imam</li>
+      <li>Remote Developer</li>
+    </ul>
+  </div>
+
+  <hr>
+
+  <div class="contact">
+    <h1>Contact Me!</h1>
+    <p>Phone: 407-624-9599</p>
+    <p>Email: bluenovas33@gmail.com</p>
+
+  </div>
+
+
+
+
+  <hr>
+    <div id="trademark">
+      <p>© Abdulalim hamid </p>
+    </div>
+
+    
+
+          
+
+       
+              
+
+    
+      
+</body>
+</html>

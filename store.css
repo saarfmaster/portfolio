@@ -1,0 +1,46 @@
+body{
+    background-color: peachpuff;
+}
+#right{
+    margin-left: 800px;
+    background-color: purple;
+}
+
+#left{
+    background-color: red;
+}
+img{
+    height: 210px;
+    width: 210px;
+    border: 10px peachpuff solid;
+}
+.headers{
+    margin-left: 50%;
+}
+
+
+.comodity{
+ margin-left: 10px;
+
+}
+
+.price{
+    margin-left: 50px;
+    
+}
+
+td{
+border: 4px yellowgreen solid;
+text-align: center;
+}
+.card{
+    border: gray solid 20px;
+}
+.option{
+    text-align: center;
+}
+
+#list{
+    margin-left: 230px;
+    margin-top: -20px;
+}

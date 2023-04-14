@@ -1,0 +1,104 @@
+body{
+background-color: black;
+
+}
+
+.intro {
+  opacity: 0.85;
+}
+
+#welcome{
+  color:red;
+font-family: 'Allison';
+text-align: center;
+}
+
+h1{
+  color: red;
+  text-align: center;
+}
+
+.NM{
+opacity: 0.85;
+}
+
+.personalInformation{
+  text-align: center;
+}
+
+.{
+
+}
+
+
+label{
+  color:red;
+}
+
+p{
+  color:Red;
+  text-align: center;
+}
+
+address{
+  color:purple;
+}
+
+button{
+  color:blue;
+}
+
+table{
+  color:red;
+}
+
+div{
+  background-color: black;
+  border:2px solid red;
+  width: 50%;
+  text-align: center;
+  margin: 10px 10px 40px 300px;
+}
+
+input{
+  border:2px solid purple;
+}
+
+textarea{
+  border:5px solid red;
+  width: 50%;
+  margin: 0px 400px 0px 300px;
+}
+
+#why{
+  margin: 100px 0px 0px 300px;
+}
+
+.meeting{
+  margin: 0px 0px 0px 565px
+}
+
+#list{
+  background-color: black;
+  margin:auto;
+}
+
+a{
+  text-align: center;
+}
+
+a:visited{
+color:purple;
+}
+
+select{
+  border: 2px solid purple;
+}
+
+.buttonc{
+  margin: 0px 0px 0px 1000px;
+}
+
+option{
+
+}

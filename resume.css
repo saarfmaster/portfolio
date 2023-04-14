@@ -1,0 +1,88 @@
+  body{
+    text-align: center;
+    position: relative; 
+} 
+
+#welcome{
+    background-color: antiquewhite;;
+}
+
+#trademark{
+    position: absolute;
+    bottom: -50px;
+    left: 550px;
+}
+
+
+td{
+    border: solid black 4px;
+}
+
+th{
+    border: solid black 4px;
+}
+
+
+#photo-row{
+    background-color: aliceblue;
+    margin-bottom: 100px;
+}
+
+
+
+.row{
+    position: relative;
+    top: 100px;
+}
+
+.photo-choices{
+    height: 200px;
+    width: 200px;
+}
+
+.bio-photos{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+#intro{
+    background-color: bisque;
+}
+
+
+#skills{
+    display: inline-block;
+    
+}
+
+ul{
+    text-align: left;
+}
+
+#Education{
+    background-color:wheat;
+}
+
+#Goals{
+    display: inline-block;
+}
+
+.contact{
+    background-color: white
+}
+
+.project-photos{
+    height: 200px;
+    width: 200px;
+}
+
+table{
+    width: 50%;
+    margin-left: 300px;
+}
+
+#project-table{
+    background-color: azure;
+}
+
