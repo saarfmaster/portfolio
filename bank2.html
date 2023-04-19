@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>experimentbank.html</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="bank.css">
+</head>
+<body> 
+     <nav class="navbar navbar-default"> 
+        
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" style="margin-top: -7px;" src="favicon-32x32.png">
+                  </a>
+              </div> 
+    
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="bank.html">Sign in</a></li>
+                  <li class="active"><a href="#"> Options <span class="sr-only">(current)</span></a></li>   
+            </div>
+
+     </nav>
+
+      <div class="container"> 
+          <div class="jumbotron"> 
+
+            <h2 style="text-align: center; margin-bottom: 50px;"> What would you like to do today?</h2>
+          </div>
+      </div>   
+
+            <div class="container-fluid"> 
+              <div class="row">
+            
+                <div class="col-lg-3 col-xs-6">
+                  <button class="options" onClick="deposite()">Deposit</button>
+                  <button onClick="deposite()">   
+                  <img class="thumbnail crop_images" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScefGfWCcWlGBtbGc143yskVsD4BctKOzJp7Lu7WE&s" alt="" srcset=""> 
+                  </button> 
+                </div>
+
+                <div class="col-lg-3 col-xs-6">
+                  <button class="options" onClick="withdrawle()" >Withdrawl</button>
+                  <button onClick="withdrawle()">
+                  <img class="thumbnail crop_images" src="https://icon-library.com/images/cash-out-icon/cash-out-icon-1.jpg" alt="" srcset="">
+                  </button> 
+                </div>
+
+                <div class="col-lg-3 col-xs-6 "> 
+                  <button class="options" onClick="quickpaye()">Quick Pay</button>
+                  <button onClick="quickpaye()">
+                  <img class="thumbnail crop_images" src="https://thumbs.dreamstime.com/b/illustration-phone-payment-icon-white-background-phone-payment-icon-white-background-117773240.jpg" alt="" srcset="">
+                  </button> 
+                </div>
+
+                <div class="col-lg-3 col-xs-6"> 
+                  <button class="options" onClick="bal()">Balance</button>
+                  <button onClick="bal()"> 
+                  <img class="thumbnail crop_images" src="https://st4.depositphotos.com/16138592/29992/v/950/depositphotos_299924732-stock-illustration-glyph-icon-bank-account-balance.jpg" alt="" srcset="">
+                  </button> 
+                </div>
+
+                <div class="col-lg-3 col-xs-6 ">
+                  <button class="bottom" onClick="transaction()">View Transactions</button>
+                  <button onClick="transaction()"  a href="#"  >   
+                  <img class="thumbnail crop_images" src="https://static.thenounproject.com/png/3137405-200.png" alt="" srcset="">
+                  </button> 
+                </div>
+
+                <div class="col-lg-3 col-xs-6">
+                  <button class="bottom">Online Transfer</button>
+                  <button onClick="">
+                  <img class="thumbnail crop_images" src="https://cdn.iconscout.com/icon/free/png-256/money-transfer-2647242-2208355.png" alt="" srcset="">
+                  </button> 
+                </div> 
+
+                <div class="col-lg-3 col-xs-6 ">
+                  <button class="bottom" onClick="bankstatement()">Get Bank Statement</button>
+                  <button onClick="bankstatement()">
+                  <img class="thumbnail crop_images" src="https://static.thenounproject.com/png/77092-200.png" alt="" srcset="">
+                  </button> 
+                </div>
+
+                <div class="col-lg-3 col-xs-6">
+                  <a href="bank3.html"> <button class="bottom">Set up Meeting</button> </a> 
+                <a href="bank3.html">  <button onClick = "">
+                  <img class="thumbnail crop_images" src="https://icon-library.com/images/appointment-icon/appointment-icon-16.jpg" alt="" srcset="">
+                </button> </a> 
+                </div>
+              </div> 
+            </div>
+         
+
+        
+
+          <script>
+             var balance = [];
+             var deposit = [];
+             var withdrawl = [];
+             var quickpay = [];
+            function deposite() {
+              deposit = prompt("Enter the Amount you wish to deposit:" );
+              deposit = parseFloat(deposit);
+              alert("You Deposited $ "+deposit+" in your account ");
+              balance = parseFloat(deposit + balance)
+              alert("You have $ "+balance+" in your account");
+              console.log("+$"+deposit )
+              console.log("$"+balance)
+            }
+            function withdrawle() {
+              withdrawl = prompt("Enter the amount you wish to withdraw:");
+              withdrawl = parseFloat(withdrawl);
+              balance = parseFloat(balance-withdrawl);
+              alert("You Withdrawed $ "+withdrawl+" from your account");
+              alert("You have $ "+balance+" remaining in your account");
+              console.log("-$"+withdrawl)
+              console.log("$"+balance)
+            }
+            function quickpaye() {
+              var reciever = prompt("Enter the name/ number or email of the reciever");
+              quickpay = prompt("Enter the Amount:");
+              quickpay = parseFloat(quickpay);
+              balance= balance-quickpay;
+              alert("You Sent "+reciever+" $ "+quickpay+" ");
+              alert("You have $ "+balance+" remaining in your account");
+              console.log("to"+reciever+": -$"+quickpay)
+              console.log(balance)
+            }
+            function bal() {
+              var pin = prompt("Enter Your 4 digit pin:");
+              balance = parseFloat(balance);
+             Mybalance = alert("Your balance is  $ "+balance); 
+            }
+            function transaction() {
+              alert("To see your transactions rightclick and choose inspect from the list of options. Then click on console.")
+            }
+            function bankstatement() {
+              print(console.log)
+            }
+
+          </script>
+            
+</body>
+</html>
